@@ -13,19 +13,30 @@
         <h1>Expense Tracker</h1>
         </div>
 
-        <div class="expense-input">
-            <input type="text" id="expense-input" placeholder="Expense Name:">
-            <input type="number" id="expense-input" placeholder="Expense Amount:">
-<!--         
-            <button id="add-btn"></button>
-            <button id="update-btn"></button>
-            <button id="delete-btn"></button> -->
-        
-        </div>
-        <div>
-            <ul id="Ep-list"></ul>
+
+        <div class="category-nav">
+            <button onclick="showInputSection('Food')">Food</button>
+            <button onclick="showInputSection('Transport')">Transport</button>
+            <button onclick="showInputSection('Housing')">Housing</button>
+            <button onclick="showInputSection('Entertainment')">Entertainment</button>
+            <button onclick="showInputSection('Healthcare')">Healthcare</button>
+            <button onclick="showInputSection('Education')">Education</button>
+            <button onclick="showInputSection('Personal Care')">Personal Care</button>
+            <button onclick="showInputSection('Savings')">Savings</button>
+            <button onclick="showInputSection('Debt Repayment')">Debt</button>
+            <button onclick="showInputSection('Miscellaneous')">Miscellaneous</button>
         </div>
 
+        <div class="expense-input" style="display: none;">
+            <input type="text" id="expense-input" placeholder="Expense Name:">
+            <input type="number" id="expense-input" placeholder="Expense Amount:">
+
+        </div>
+
+        <h2>Expenses</h2>
+        <ul id="Ep-list"></ul>
+        
+        <h2 id="summary">Summary</h2>
         <div id="Output-part"></div>
     </div>
     
@@ -34,5 +45,20 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
 
 
