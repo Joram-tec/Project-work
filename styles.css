@@ -36,8 +36,12 @@ body{
     margin-left: 40%;
     margin-right: 35%;
     gap: 20px;   
-
 }
 .container{
     margin: 0%;
+}
+#expense-input{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
