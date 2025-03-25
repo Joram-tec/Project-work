@@ -62,3 +62,14 @@ body{
 .category-nav button:hover {
     background: #0056b3;
 }
+h2{
+    text-decoration: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #0D0C22;
+    margin: 0px 0px 10px;
+    font: 24px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
