@@ -1,0 +1,43 @@
+h1{
+    text-decoration: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #0D0C22;
+    margin: 0px 0px 10px;
+    font: 24px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0%;
+    padding: 0%; 
+}
+.upper{
+    /* background-color: rgb(63, 148, 148); */
+    margin-bottom: 0vmax;
+    padding: 40px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+.expense-input{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 35%;
+    gap: 20px;   
+    
+}
+.click{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 35%;
+    gap: 20px;   
+
+}
+.container{
+    margin: 0%;
+}

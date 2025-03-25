@@ -1,0 +1,137 @@
+{
+    "expenses": [
+      {
+        "id": 1,
+        "category": "Food",
+        "description": "Groceries"
+        
+      },
+      {
+        "id": 2,
+        "category": "Food",
+        "description": "Restaurant"
+        
+      },
+      {
+        "id": 3,
+        "category": "Transport",
+        "description": "Fuel"
+        
+      },
+      {
+        "id": 4,
+        "category": "Transport",
+        "description": "Public Transport"
+       
+      },
+      {
+        "id": 5,
+        "category": "Housing",
+        "description": "Rent"
+        
+      },
+      {
+        "id": 6,
+        "category": "Housing",
+        "description": "Electricity Bill"
+        
+      },
+      {
+        "id": 7,
+        "category": "Housing",
+        "description": "Water Bill"
+        
+      },
+      {
+        "id": 8,
+        "category": "Entertainment",
+        "description": "Streaming"
+       
+      },
+      {
+        "id": 9,
+        "category": "Entertainment",
+        "description": "Self-care"
+      
+      },
+      {
+        "id": 10,
+        "category": "Entertainment",
+        "description": "Outings"
+        
+      },
+      {
+        "id": 11,
+        "category": "Healthcare",
+        "description": "Doctor Visit"
+        
+      },
+      {
+        "id": 12,
+        "category": "Healthcare",
+        "description": "Medicine"
+       
+      },
+      {
+        "id": 13,
+        "category": "Education",
+        "description": "Books"
+       
+      },
+      {
+        "id": 14,
+        "category": "Education",
+        "description": "School fees"
+       
+      },
+      {
+        "id": 15,
+        "category": "Personal Care",
+        "description": "Hair-care"
+        
+      },
+      {
+        "id": 16,
+        "category": "Personal Care",
+        "description": "Gym Membership"
+       
+      },
+      {
+        "id": 17,
+        "category": "Savings",
+        "description": "Monthly Savings"
+       
+      },
+      {
+        "id": 18,
+        "category": "Debt Repayment",
+        "description": "Loan Payment"
+       
+      },
+      {
+        "id": 19,
+        "category": "Gifts & Donations",
+        "description": "Charity Donation"
+        
+      },
+      {
+        "id": 20,
+        "category": "Gifts & Donations",
+        "description": "Grants"
+        
+      },
+      {
+        "id": 21,
+        "category": "Insurance",
+        "description": "Insurance covers"
+       
+      },
+      {
+        "id": 22,
+        "category": "Miscellaneous",
+        "description": "Unexpected expense"
+        
+      }
+    ]
+  }
+  
