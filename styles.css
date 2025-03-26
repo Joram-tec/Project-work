@@ -57,7 +57,7 @@ body{
     background: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
 }
 .category-nav button:hover {
     background: #0056b3;
