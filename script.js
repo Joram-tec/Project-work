@@ -72,15 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         button.parentElement.remove();
         updateTotal();
     };
-    // function updateTotal() {
-    //     let total = 0;
-    //     document.querySelectorAll(".summary-item span").forEach(item => {
-
-    //         const amount = parseFloat(item.innerText.split("$")[1]);
-    //         total += amount;
-    //     });
-    //     summarySection.innerHTML = <h2>Total Expenses: $${total}</h2> + summarySection.innerHTML;
-    // }
     function updateTotal() {
         let total = 0;
         document.querySelectorAll(".summary-item span").forEach(item => {
