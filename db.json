@@ -67,222 +67,223 @@
     },
     {
       "id": 14,
-      "category": "Child Care",
-      "description": "School fees"
+      "category": "Transport",
+      "description": "Other:"
     },
     {
       "id": 15,
       "category": "Child Care",
-      "description": "Clothes"
+      "description": "School fees"
     },
     {
       "id": 16,
       "category": "Child Care",
-      "description": "Recreational Expenses"
+      "description": "Clothes"
     },
     {
       "id": 17,
       "category": "Child Care",
-      "description": "Medical Expenses"
+      "description": "Recreational Expenses"
     },
     {
       "id": 18,
       "category": "Child Care",
-      "description": "Other:"
+      "description": "Medical Expenses"
     },
     {
       "id": 19,
-      "category": "Entertainment",
-      "description": "Streaming"
+      "category": "Child Care",
+      "description": "Other:"
     },
     {
       "id": 20,
       "category": "Entertainment",
-      "description": "Outings"
+      "description": "Streaming"
     },
     {
       "id": 21,
       "category": "Entertainment",
-      "description": "Club Membership"
+      "description": "Outings"
     },
     {
       "id": 22,
       "category": "Entertainment",
-      "description": "Drinks/Going Out"
+      "description": "Club Membership"
     },
     {
       "id": 23,
       "category": "Entertainment",
-      "description": "Internet"
+      "description": "Drinks/Going Out"
     },
     {
       "id": 24,
       "category": "Entertainment",
-      "description": "Holidays"
+      "description": "Internet"
     },
     {
       "id": 25,
       "category": "Entertainment",
-      "description": " Eating Out: Breakfast, lunch, supper"
+      "description": "Holidays"
     },
     {
       "id": 26,
       "category": "Entertainment",
-      "description": "Other:"
+      "description": " Eating Out: Breakfast, lunch, supper"
     },
     {
       "id": 27,
-      "category": "Healthcare",
-      "description": "Doctor Visit"
+      "category": "Entertainment",
+      "description": "Other:"
     },
     {
       "id": 28,
       "category": "Healthcare",
-      "description": "Medicine"
+      "description": "Doctor Visit"
     },
     {
       "id": 29,
       "category": "Healthcare",
-      "description": "Other:"
+      "description": "Medicine"
     },
     {
       "id": 30,
-      "category": "Education",
-      "description": "Books"
+      "category": "Healthcare",
+      "description": "Other:"
     },
     {
       "id": 31,
       "category": "Education",
-      "description": "fees"
+      "description": "Books"
     },
     {
       "id": 32,
-      "category": "Personal Care",
-      "description": "Hair-care"
+      "category": "Education",
+      "description": "Fees"
     },
     {
       "id": 33,
-      "category": "Personal Care",
-      "description": "nails"
+      "category": "Education",
+      "description": "Other:"
     },
     {
       "id": 34,
       "category": "Personal Care",
-      "description": "Clothes"
+      "description": "Hair-care"
     },
     {
       "id": 35,
       "category": "Personal Care",
-      "description": "Gymn"
+      "description": "nails"
     },
     {
       "id": 36,
       "category": "Personal Care",
-      "description": "Other:"
+      "description": "Clothes"
     },
     {
       "id": 37,
-      "category": "Savings/Investments",
-      "description": "Sacco Savings"
+      "category": "Personal Care",
+      "description": "Gymn"
     },
     {
       "id": 38,
-      "category": "Savings/Investments",
-      "description": "Investment groups/chama"
+      "category": "Personal Care",
+      "description": "Other:"
     },
     {
       "id": 39,
       "category": "Savings/Investments",
-      "description": "Other:"
+      "description": "Sacco Savings"
     },
     {
       "id": 40,
-      "category": "Debt Repayment",
-      "description": " Personal Loan Payment"
+      "category": "Savings/Investments",
+      "description": "Investment groups/chama"
     },
     {
       "id": 41,
-      "category": "Debt Repayment",
-      "description": "Credit Card"
+      "category": "Savings/Investments",
+      "description": "Other:"
     },
     {
       "id": 42,
       "category": "Debt Repayment",
-      "description": "Car loan"
+      "description": " Personal Loan Payment"
     },
     {
       "id": 43,
       "category": "Debt Repayment",
-      "description": "Business/Investment loan"
+      "description": "Credit Card"
     },
     {
       "id": 44,
+      "category": "Debt Repayment",
+      "description": "Car loan"
+    },
+    {
+      "id": 45,
+      "category": "Debt Repayment",
+      "description": "Business/Investment loan"
+    },
+    {
+      "id": 46,
+      "category": "Debt Repayment",
+      "description": "Other:"
+    },
+    {
+      "id": 47,
       "category": "Gifts & Donations",
       "description": "Charity Donation"
     },
     {
-      "id": 45,
+      "id": 48,
       "category": "Gifts & Donations",
       "description": "Grants"
     },
     {
-      "id": 46,
-      "category": "Insurance",
-      "description": " Life Insurance covers"
-    },
-    {
-      "id": 47,
-      "category": "Insurance",
-      "description": "Medical Insurance covers"
-    },
-    {
-      "id": 48,
-      "category": "Insurance",
-      "description": " House Insurance covers"
-    },
-    {
       "id": 49,
-      "category": "Insurance",
-      "description": " Property Insurance covers"
+      "category": "Gifts & Donations",
+      "description": "Other:"
     },
     {
       "id": 50,
       "category": "Insurance",
-      "description": "Other:"
+      "description": " Life Insurance covers"
     },
     {
       "id": 51,
+      "category": "Insurance",
+      "description": "Medical Insurance covers"
+    },
+    {
+      "id": 52,
+      "category": "Insurance",
+      "description": " House Insurance covers"
+    },
+    {
+      "id": 53,
+      "category": "Insurance",
+      "description": " Property Insurance covers"
+    },
+    {
+      "id": 54,
+      "category": "Insurance",
+      "description": "Other:"
+    },
+    {
+      "id": 55,
       "category": "Miscellaneous",
       "description": "Unexpected expense"
     },
     {
-      "id": 52,
+      "id": 56,
       "category": "Miscellaneous",
       "description": "Spiritual/tithes/Offering"
     },
     {
-      "id": 1742993875488,
-      "category": "Savings/Investments",
-      "amount": 300,
-      "description": "goods"
-    },
-    {
-      "id": 1742993906534,
-      "category": "Education",
-      "amount": 200,
-      "description": "Girls"
-    },
-    {
-      "id": 1742994597734,
-      "category": "Healthcare",
-      "amount": 200,
-      "description": "Insurance"
-    },
-    {
-      "id": 1742995993091,
-      "category": "Transport",
-      "amount": 200,
-      "description": "goods"
-    }
+      "id": 57,
+      "category": "Miscellaneous",
+      "description": "Other:"
+    }   
   ]
 }

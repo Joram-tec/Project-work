@@ -1,3 +1,4 @@
+const apiUrl = ("https://expense-tracker-json.vercel.app/expenses");
 document.addEventListener("DOMContentLoaded", () => {
     const expenseList = document.getElementById("expenses-section");
    const summarySection = document.getElementById("summary-section");
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     function showExpenses() {
-        fetch("http://localhost:3000/expenses")
+        fetch(apiUrl)
 
             .then(response => response.json())
 
@@ -80,8 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
             total += amount;
         });
         summarySection.innerHTML = `<h2>Total Expenses: $${total}</h2>` + summarySection.innerHTML;
-    }
-    
-    
-        
+    };       
 });
