@@ -1,4 +1,4 @@
-const apiUrl = ("https://expense-tracker-json.vercel.app/expenses");
+const apiUrl = ("https://project-work-7i1p.vercel.app/expenses");
 document.addEventListener("DOMContentLoaded", () => {
     const expenseList = document.getElementById("expenses-section");
    const summarySection = document.getElementById("summary-section");
