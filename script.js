@@ -1,82 +1,86 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const expenseList = document.getElementById("ep-list");
-
-    let selectCategory = "";
+    const expenseList = document.getElementById("expenses-section");
+   const summarySection = document.getElementById("summary-section");
+    let selectedCategory = "";
 
     
     window.renderExpenseSection = function (category) {
-        selectCategory = category;
+        selectedCategory = category;
 
-        document.getElementById("expenses").innerText = `Expenses for ${category}`;
+        
+        document.getElementById("category-heading").innerHTML = `<h2>Expenses for ${category}</h2>`;
 
-
-        document.getElementById("ep-list").style.display = "block";
-
-        showExpenses(); 
+        showExpenses();
     };
 
+    
     function showExpenses() {
         fetch("http://localhost:3000/expenses")
-            .then(response => response.json())
-            .then(data => {
-                expenseList.innerHTML = ""; 
 
-                
-                const filteredExpenses = data.filter(expense => expense.category === selectCategory);
-                
-                if (filteredExpenses.length === 0) {
-                    expenseList.innerHTML = "";
+            .then(response => response.json())
+
+            .then(data => {
+                expenseList.innerHTML = "";
+
+                const filteredExpenses = data.filter(expense => expense.category === selectedCategory);
+                  if (filteredExpenses.length === 0) {
+                    expenseList.innerHTML = "<p>No expenses available for this category.</p>";
                 } else {
-                    filteredExpenses.forEach(expense => addExpenseToPage(expense));
+                    filteredExpenses.forEach(expense => addExpenseToUI(expense));
                 }
             })
-            
     }
+    function addExpenseToUI(expense) {
+        const div = document.createElement("div");
+        div.classList.add("expense-item");
 
-    function addExpense() {
-        const naming = document.getElementById("name").value;
-
-        const amounting = document.getElementById("amount").value;
-
-        if (!naming || !amounting || !selectCategory) {
-            alert("Please fill out all the fields.");
-            return;
+        div.innerHTML = `
+            <span>${expense.description}</span>
+            <button onclick='promptExpenseAmount("${expense.description}")'>Add Expense</button>
+        `;
+        expenseList.appendChild(div);
+    }
+    window.promptExpenseAmount = function (description) {
+        const amount = prompt(`Enter amount for "${description}":`);
+        if (amount && !isNaN(amount ) && amount  > 0 )  {
+                addExpenseToSummary(description, parseFloat(amount));
+        } else {
+        alert("Please enter a valid amount.");
         }
+    };   
+    function addExpenseToSummary(description, amount) {
+        const summaryItem = document.createElement("div");
+            summaryItem.classList.add("summary-item");
 
-        const newExpense = {
-            category: selectCategory,
-            amount: parseFloat(amounting),
-            description: naming,
-        };
-
-        fetch("http://localhost:3000/expenses", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(newExpense),
-        })
-            .then(response => response.json())
-            .then(() => {
-                showExpenses(); 
-                document.getElementById("name").value = "";
-                document.getElementById("amount").value = "";
-            })
+        summaryItem.innerHTML = `
+            <span>${description}: $${amount}</span>
+            <button onclick='editExpense(this, "${description}")'>Edit</button>
+            <button onclick='deleteExpense(this)'>Delete</button>
+        `;
+        summarySection.appendChild(summaryItem);
+        updateTotal();
     }
+    window.editExpense = function (button, description) {
+        const newAmount = prompt(`Enter new amount for "${description}":`);
+        if (newAmount && !isNaN ( newAmount) &&  newAmount >  0)  {
+             button.parentElement.querySelector("span").innerText = `${description}: $${newAmount}`;
+        updateTotal();
+        } else {
+                alert("Please enter a valid amount.");
+        }
+    };
+    window.deleteExpense = function (button) {
+        button.parentElement.remove();
+        updateTotal();
+    };
 
-    function addExpenseToPage(expense) {
-        const li = document.createElement("li");
-        li.innerHTML = `${expense.description} - 
-            <button onclick='editExpense(${expense.id}, "${expense.description}", ${expense.amount})'>Edit</button>
-            <button onclick='deleteExpense(${expense.id})'>Delete</button>`;
-
-        expenseList.appendChild(li);
-    }
-    function showSummary() {
-        fetch("http://localhost:3000/expenses")
-            .then(response => response.json())
-            .then(data => {
-                const total = data.reduce((sum, exp) => sum + exp.amount, 0);
-                document.getElementById("summary").innerText = `Total Expenses: $${total}`;
-            })
+    function updateTotal() {
+        let total = 0;
+        document.querySelectorAll(".summary-item span").forEach(item => {
             
+            const amount = parseFloat(item.innerText.split("$")[1]);
+            total += amount;
+        });
+        summarySection.innerHTML = `<h2>Total Expenses: $${total}</h2>` + summarySection.innerHTML;
     }
 });

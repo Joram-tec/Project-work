@@ -9,40 +9,39 @@
 <body>
 
     <div class="container">
+
         <div class="upper">
+            
         <h1>Expense Tracker</h1>
         </div>
 
 
         <div class="category-nav">
-            <button onclick="renderExpenseSection('Food')">Food</button>
+            <button onclick="renderExpenseSection('Household Expenses')">Household Expenses</button>
             <button onclick="renderExpenseSection('Transport')">Transport</button>
-            <button onclick="renderExpenseSection('Housing')">Housing</button>
+            <button onclick="renderExpenseSection('Child Care')">Child care</button>
             <button onclick="renderExpenseSection('Entertainment')">Entertainment</button>
             <button onclick="renderExpenseSection('Healthcare')">Healthcare</button>
             <button onclick="renderExpenseSection('Education')">Education</button>
             <button onclick="renderExpenseSection('Personal Care')">Personal Care</button>
-            <button onclick="renderExpenseSection('Savings')">Savings</button>
+            <button onclick="renderExpenseSection('Savings/Investments')">Savings/Investments</button>
             <button onclick="renderExpenseSection('Debt Repayment')">Debt</button>
             <button onclick="renderExpenseSection('Miscellaneous')">Miscellaneous</button>
         </div>
 
-        <div class="expense-input"  style="display: none;"> 
-            <input type="text" id="name" placeholder="Expense Name:" >
-            <input type="number" id="amount" placeholder="Expense Amount:">
-            <button onclick="addExpense()">Add Expense</button>
-        </div>
 
-        <h2 id="expenses"></h2>
-        <ul id="ep-list"></ul>
+        <div id="category-heading"></div>
+       
         
-        <h2 id="summary">Summary</h2>
-        <div id="Output-part"></div>
+        <div id="expenses-section"></div>
+        
+
+        <div id="summary-section"></div>
     </div>
     
 
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
 
@@ -52,13 +51,4 @@
 
 
 
-
-
-
-    
-    
-
-    
-
-
-
+     

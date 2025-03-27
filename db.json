@@ -1,137 +1,288 @@
 {
-    "expenses": [
-      {
-        "id": 1,
-        "category": "Food",
-        "description": "Groceries"
-        
-      },
-      {
-        "id": 2,
-        "category": "Food",
-        "description": "Restaurant"
-        
-      },
-      {
-        "id": 3,
-        "category": "Transport",
-        "description": "Fuel"
-        
-      },
-      {
-        "id": 4,
-        "category": "Transport",
-        "description": "Public Transport"
-       
-      },
-      {
-        "id": 5,
-        "category": "Housing",
-        "description": "Rent"
-        
-      },
-      {
-        "id": 6,
-        "category": "Housing",
-        "description": "Electricity Bill"
-        
-      },
-      {
-        "id": 7,
-        "category": "Housing",
-        "description": "Water Bill"
-        
-      },
-      {
-        "id": 8,
-        "category": "Entertainment",
-        "description": "Streaming"
-       
-      },
-      {
-        "id": 9,
-        "category": "Entertainment",
-        "description": "Self-care"
-      
-      },
-      {
-        "id": 10,
-        "category": "Entertainment",
-        "description": "Outings"
-        
-      },
-      {
-        "id": 11,
-        "category": "Healthcare",
-        "description": "Doctor Visit"
-        
-      },
-      {
-        "id": 12,
-        "category": "Healthcare",
-        "description": "Medicine"
-       
-      },
-      {
-        "id": 13,
-        "category": "Education",
-        "description": "Books"
-       
-      },
-      {
-        "id": 14,
-        "category": "Education",
-        "description": "School fees"
-       
-      },
-      {
-        "id": 15,
-        "category": "Personal Care",
-        "description": "Hair-care"
-        
-      },
-      {
-        "id": 16,
-        "category": "Personal Care",
-        "description": "Gym Membership"
-       
-      },
-      {
-        "id": 17,
-        "category": "Savings",
-        "description": "Monthly Savings"
-       
-      },
-      {
-        "id": 18,
-        "category": "Debt Repayment",
-        "description": "Loan Payment"
-       
-      },
-      {
-        "id": 19,
-        "category": "Gifts & Donations",
-        "description": "Charity Donation"
-        
-      },
-      {
-        "id": 20,
-        "category": "Gifts & Donations",
-        "description": "Grants"
-        
-      },
-      {
-        "id": 21,
-        "category": "Insurance",
-        "description": "Insurance covers"
-       
-      },
-      {
-        "id": 22,
-        "category": "Miscellaneous",
-        "description": "Unexpected expense"
-        
-      }
-    ]
-  }
-  
+  "expenses": [
+    {
+      "id": 1,
+      "category": "Household Expenses",
+      "description": "Groceries"
+    },
+    {
+      "id": 2,
+      "category": "Household Expenses",
+      "description": "Water"
+    },
+    {
+      "id": 3,
+      "category": "Household Expenses",
+      "description": "Rent"
+    },
+    {
+      "id": 4,
+      "category": "Household Expenses",
+      "description": "Electricity"
+    },
+    {
+      "id": 5,
+      "category": "Household Expenses",
+      "description": "Gas"
+    },
+    {
+      "id": 6,
+      "category": "Household Expenses",
+      "description": "Phone Expenses"
+    },
+    {
+      "id": 7,
+      "category": "Household Expenses",
+      "description": "Household Items"
+    },
+    {
+      "id": 8,
+      "category": "Household Expenses",
+      "description": "Others:"
+    },
+    {
+      "id": 9,
+      "category": "Transport",
+      "description": "Fuel"
+    },
+    {
+      "id": 10,
+      "category": "Transport",
+      "description": "Bus Fare"
+    },
+    {
+      "id": 11,
+      "category": "Transport",
+      "description": "Parking fees"
+    },
+    {
+      "id": 12,
+      "category": "Transport",
+      "description": "Repairs/Services"
+    },
+    {
+      "id": 13,
+      "category": "Transport",
+      "description": "Car Insurances"
+    },
+    {
+      "id": 14,
+      "category": "Child Care",
+      "description": "School fees"
+    },
+    {
+      "id": 15,
+      "category": "Child Care",
+      "description": "Clothes"
+    },
+    {
+      "id": 16,
+      "category": "Child Care",
+      "description": "Recreational Expenses"
+    },
+    {
+      "id": 17,
+      "category": "Child Care",
+      "description": "Medical Expenses"
+    },
+    {
+      "id": 18,
+      "category": "Child Care",
+      "description": "Other:"
+    },
+    {
+      "id": 19,
+      "category": "Entertainment",
+      "description": "Streaming"
+    },
+    {
+      "id": 20,
+      "category": "Entertainment",
+      "description": "Outings"
+    },
+    {
+      "id": 21,
+      "category": "Entertainment",
+      "description": "Club Membership"
+    },
+    {
+      "id": 22,
+      "category": "Entertainment",
+      "description": "Drinks/Going Out"
+    },
+    {
+      "id": 23,
+      "category": "Entertainment",
+      "description": "Internet"
+    },
+    {
+      "id": 24,
+      "category": "Entertainment",
+      "description": "Holidays"
+    },
+    {
+      "id": 25,
+      "category": "Entertainment",
+      "description": " Eating Out: Breakfast, lunch, supper"
+    },
+    {
+      "id": 26,
+      "category": "Entertainment",
+      "description": "Other:"
+    },
+    {
+      "id": 27,
+      "category": "Healthcare",
+      "description": "Doctor Visit"
+    },
+    {
+      "id": 28,
+      "category": "Healthcare",
+      "description": "Medicine"
+    },
+    {
+      "id": 29,
+      "category": "Healthcare",
+      "description": "Other:"
+    },
+    {
+      "id": 30,
+      "category": "Education",
+      "description": "Books"
+    },
+    {
+      "id": 31,
+      "category": "Education",
+      "description": "fees"
+    },
+    {
+      "id": 32,
+      "category": "Personal Care",
+      "description": "Hair-care"
+    },
+    {
+      "id": 33,
+      "category": "Personal Care",
+      "description": "nails"
+    },
+    {
+      "id": 34,
+      "category": "Personal Care",
+      "description": "Clothes"
+    },
+    {
+      "id": 35,
+      "category": "Personal Care",
+      "description": "Gymn"
+    },
+    {
+      "id": 36,
+      "category": "Personal Care",
+      "description": "Other:"
+    },
+    {
+      "id": 37,
+      "category": "Savings/Investments",
+      "description": "Sacco Savings"
+    },
+    {
+      "id": 38,
+      "category": "Savings/Investments",
+      "description": "Investment groups/chama"
+    },
+    {
+      "id": 39,
+      "category": "Savings/Investments",
+      "description": "Other:"
+    },
+    {
+      "id": 40,
+      "category": "Debt Repayment",
+      "description": " Personal Loan Payment"
+    },
+    {
+      "id": 41,
+      "category": "Debt Repayment",
+      "description": "Credit Card"
+    },
+    {
+      "id": 42,
+      "category": "Debt Repayment",
+      "description": "Car loan"
+    },
+    {
+      "id": 43,
+      "category": "Debt Repayment",
+      "description": "Business/Investment loan"
+    },
+    {
+      "id": 44,
+      "category": "Gifts & Donations",
+      "description": "Charity Donation"
+    },
+    {
+      "id": 45,
+      "category": "Gifts & Donations",
+      "description": "Grants"
+    },
+    {
+      "id": 46,
+      "category": "Insurance",
+      "description": " Life Insurance covers"
+    },
+    {
+      "id": 47,
+      "category": "Insurance",
+      "description": "Medical Insurance covers"
+    },
+    {
+      "id": 48,
+      "category": "Insurance",
+      "description": " House Insurance covers"
+    },
+    {
+      "id": 49,
+      "category": "Insurance",
+      "description": " Property Insurance covers"
+    },
+    {
+      "id": 50,
+      "category": "Insurance",
+      "description": "Other:"
+    },
+    {
+      "id": 51,
+      "category": "Miscellaneous",
+      "description": "Unexpected expense"
+    },
+    {
+      "id": 52,
+      "category": "Miscellaneous",
+      "description": "Spiritual/tithes/Offering"
+    },
+    {
+      "id": 1742993875488,
+      "category": "Savings/Investments",
+      "amount": 300,
+      "description": "goods"
+    },
+    {
+      "id": 1742993906534,
+      "category": "Education",
+      "amount": 200,
+      "description": "Girls"
+    },
+    {
+      "id": 1742994597734,
+      "category": "Healthcare",
+      "amount": 200,
+      "description": "Insurance"
+    },
+    {
+      "id": 1742995993091,
+      "category": "Transport",
+      "amount": 200,
+      "description": "goods"
+    }
+  ]
+}
