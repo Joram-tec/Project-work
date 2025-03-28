@@ -33,11 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     function addExpenseToUI(expense) {
         const div = document.createElement("div");
         div.classList.add("expense-item");
-
+        
         div.innerHTML = `
             <span>${expense.description}</span>
             <button onclick='promptExpenseAmount("${expense.description}")'>Add Expense</button>
         `;
+        
         expenseList.appendChild(div);
     }
     window.promptExpenseAmount = function (description) {
@@ -72,14 +73,22 @@ document.addEventListener("DOMContentLoaded", () => {
     window.deleteExpense = function (button) {
         button.parentElement.remove();
         updateTotal();
-    };
+     };
     function updateTotal() {
         let total = 0;
         document.querySelectorAll(".summary-item span").forEach(item => {
-
             const amount = parseFloat(item.innerText.split("$")[1]);
             total += amount;
         });
-        summarySection.innerHTML = `<h2>Total Expenses: $${total}</h2>` + summarySection.innerHTML;
-    };       
+    
+        
+        let totalDisplay = document.querySelector("#total-expenses");
+        if (!totalDisplay) {
+            totalDisplay = document.createElement("h2");
+            totalDisplay.id = "total-expenses";
+            summarySection.prepend(totalDisplay);
+        }
+        totalDisplay.innerText = `Total Expenses: $${total}`;
+    }
+      
 });
