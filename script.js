@@ -1,7 +1,8 @@
 const apiUrl = ("https://project-work-7i1p.vercel.app/expenses");
 document.addEventListener("DOMContentLoaded", () => {
+
     const expenseList = document.getElementById("expenses-section");
-   const summarySection = document.getElementById("summary-section");
+        const summarySection = document.getElementById("summary-section");
     let selectedCategory = "";
 
     window.renderExpenseSection = function (category) {
@@ -11,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("category-heading").innerHTML = `<h2>Expenses for ${category}</h2>`;
 
         showExpenses();
-    };
-
-    
+    };   
     function showExpenses() {
         fetch(apiUrl)
 
@@ -23,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 expenseList.innerHTML = "";
 
                 const filteredExpenses = data.filter(expense => expense.category === selectedCategory);
+
                   if (filteredExpenses.length === 0) {
                    return;
                 } else {
@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.classList.add("expense-item");
         
-        div.innerHTML = `
-            <span>${expense.description}</span>
+        div.innerHTML = `<span>${expense.description}</span>
             <button onclick='promptExpenseAmount("${expense.description}")'>Add Expense</button>
         `;
         
@@ -53,19 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const summaryItem = document.createElement("div");
             summaryItem.classList.add("summary-item");
 
-        summaryItem.innerHTML = `
-            <span>${description}: $${amount}</span>
+        summaryItem.innerHTML = `<span>${description}: $${amount}</span>
             <button onclick='editExpense(this, "${description}")'>Edit</button>
-            <button onclick='deleteExpense(this)'>Delete</button>
-        `;
+            <button onclick='deleteExpense(this)'>Delete</button>`;
         summarySection.appendChild(summaryItem);
         updateTotal();
     }
     window.editExpense = function (button, description) {
+       
         const newAmount = prompt(`Enter new amount for "${description}":`);
         if (newAmount && !isNaN ( newAmount) &&  newAmount >  0)  {
+
              button.parentElement.querySelector("span").innerText = `${description}: $${newAmount}`;
-        updateTotal();
+                updateTotal();
         } else {
                 alert("Please enter a valid amount.");
         }
